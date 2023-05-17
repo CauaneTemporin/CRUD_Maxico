@@ -1,0 +1,13 @@
+com\temporintech\crud\maxicode\business\crud\fornecedor\Fornecedor.class
+com\temporintech\crud\maxicode\business\crud\categoria\CategoriaData.class
+com\temporintech\crud\maxicode\Servlet.class
+com\temporintech\crud\maxicode\adm\jsppesquisa\BdyTela.class
+com\temporintech\crud\maxicode\business\crud\produto\ProdutoData.class
+com\temporintech\crud\maxicode\business\crud\categoria\Categoria.class
+com\temporintech\crud\maxicode\business\crud\produto\Produto.class
+com\temporintech\crud\maxicode\business\Sistema.class
+com\temporintech\crud\maxicode\business\utils\DataKey.class
+com\temporintech\crud\maxicode\adm\jsptela\BdyTela.class
+com\temporintech\crud\maxicode\adm\jsptela\Tela.class
+com\temporintech\crud\maxicode\adm\jsppesquisa\Tela.class
+com\temporintech\crud\maxicode\business\crud\fornecedor\FornecedorData.class

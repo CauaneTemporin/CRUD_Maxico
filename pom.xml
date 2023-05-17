@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.temporintech</groupId>
+	<artifactId>gerenciamento</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<release>11</release>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.2.3</version>
+			</plugin>
+		</plugins>
+	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>maven.repository.release</id>
+			<url>${maven.repository.release.url}</url>
+		</repository>
+		<snapshotRepository>
+			<id>maven.repository.snapshot</id>
+			<url>${maven.repository.snapshot.url}</url>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>br.com.visualmix</groupId>
+			<artifactId>vm-maxicode</artifactId>
+			<version>3.04.62</version>
+			<exclusions>
+				<exclusion>
+					<groupId>*</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.visualmix.generico</groupId>
+			<artifactId>vm-generico-adm</artifactId>
+			<version>3.03.24</version>
+			<exclusions>
+				<exclusion>
+					<groupId>*</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+
+		<dependency>
+			<groupId>br.com.visualmix.generico</groupId>
+			<artifactId>vm-generico-business</artifactId>
+			<version>3.03.24</version>
+			<exclusions>
+				<exclusion>
+					<groupId>*</groupId>
+					<artifactId>*</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		
+		<dependency>
+			<groupId>br.com.visualmix.libs</groupId>
+			<artifactId>servlet</artifactId>
+			<version>1.0</version>
+		</dependency>
+		
+	</dependencies>
+</project>
